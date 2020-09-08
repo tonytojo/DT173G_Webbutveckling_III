@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+ <!--Tony Johansson
+ tojo8500
+ tojo8500@student.miun.se-->
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title>KnightTour</title>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/KnightTour.js" type="text/javascript"></script>
+    <link href="css/KnightTour.css" rel="stylesheet" type="text/css" />
+
+    <!--  Java script code    -->
+    <script type="text/javascript">
+
+       //Detta är chackbrädat
+        var chessBoard = [["dummy", "", "", "", "", "", "", "", ""],
+                          ["dummy", "", "", "", "", "", "", "", ""],
+                          ["dummy", "", "", "", "", "", "", "", ""],
+                          ["dummy", "", "", "", "", "", "", "", ""],
+                          ["dummy", "", "", "", "", "", "", "", ""],
+                          ["dummy", "", "", "", "", "", "", "", ""],
+                          ["dummy", "", "", "", "", "", "", "", ""],
+                          ["dummy", "", "", "", "", "", "", "", ""],
+                          ["dummy", "", "", "", "", "", "", "", ""]];
+       
+       //Några globala variabler
+       var loc; //position(rad,col) för nummer i sekvens
+       var count; //antal tillgängliga rutor att gå till
+       var sekvensCounter = 0;
+       var minObj = { count: "99" };
+       var RutorOnchessBoard = 64;
+
+        // Denna function körs först när DOM trädet är komplett
+        $(function () 
+        {
+           //Rita ut chackbrädat
+            CreateChessBoard();
+            
+            //focus på första elememtet
+            document.getElementById("ddlrader").focus();
+            
+            //Event handler för spara
+            document.getElementById("spara").addEventListener("click", Process, false);
+        });
+
+    </script>
+</head>
+
+<body>
+   <section>
+      <h1>KnightTour On ChessBoard</h1>
+
+      <div class="wrapper">
+         <form action="#">
+	        <div>
+               <label for="ddlrader">Rad:</label>
+               <select id="ddlrader" style="padding:0; margin:0">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+               </select>
+            </div>
+            <br /><br />
+            <div>
+               <label for="ddlkolumner">Kolumn:</label>
+               <select id="ddlkolumner">
+                  <option>a</option>
+                  <option>b</option>
+                  <option>c</option>
+                  <option>d</option>
+                  <option>e</option>
+                  <option>f</option>
+                  <option>g</option>
+                  <option>h</option>
+               </select>
+            </div>
+           
+            <ul class="nav">
+               <li><input type="submit"  name="clear" id="clear" value="Clear" /></li>
+               <li><input type="button"  name="spara" id="spara" value="Run" /></li>
+            </ul>
+         </form>
+      </div> <!--end wrapper-->
+
+      <table id="places" class="center">
+          <caption>Ange rad och column för hästens placering på chackbrädet</caption>
+	  </table>
+    </section>
+</body>
+</html>

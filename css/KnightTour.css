@@ -1,0 +1,133 @@
+﻿body
+{
+    font-family:arial, helvetica, sans-serif;
+    font-size:small;
+}
+
+section 
+{
+    font-size:115%;
+    background-color: #fff;
+    color: #000;
+}
+        
+section h1
+{
+    text-align:center;
+    font-size:200%;
+    padding:0;
+    margin:0;
+}
+              
+     
+table
+{
+    width:95%;
+}
+
+table.center
+{
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+#places tr:nth-child(odd)  
+{
+     background-color: #C6E2FF;
+}
+
+#places tr:hover td
+{
+    background-color: gray;
+}
+
+#places tr:nth-child(even)  
+{
+    background-color:  #63B8FF;
+}
+
+#places th[scope="col"] 
+{
+  background-color: rgb(59,87,98);
+  color: rgb(255,255,255);
+  border: 1px solid rgb(255,255,255);
+  font-weight: normal;
+  padding: 1.4em;
+}
+
+#places th[scope="row"] 
+{
+  background-color: rgb(232,232,232);
+  color: rgb(0,0,0);
+  border: 1px solid rgb(255,255,255);
+  padding: 1.4em;
+  font-weight: normal;
+  text-lign: left;
+} 
+
+#places td
+{
+    text-align:center;
+}
+
+/***************************/
+/*     form                */
+/***************************/
+form div 
+{
+  float: left;
+  width: 140px;
+  padding: 0 0 0.75em 0;
+}
+
+
+form label 
+{
+  float: left;
+  width: 50px;
+}
+
+
+form input, form select
+{
+  float:right;
+  width: 90px;
+  border-top: 1px solid #999;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #cfcfcf;
+  border-left: 1px solid #cfcfcf;
+  padding: 5px;
+}
+
+
+form select, #spara
+{
+  float:right;
+  width: 50px;
+}
+
+.wrapper
+{ 
+    float:left; 
+    width:30%;
+}
+
+#ddlkolumner
+{
+    padding:0; 
+    margin:0;
+}
+
+.nav
+{
+    list-style:none;
+    margin:0;
+    padding:0;
+    clear:both;
+}
+
+.nav li
+{
+    float:left;
+    margin:0.3em;
+}
