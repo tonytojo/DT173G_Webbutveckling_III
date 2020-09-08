@@ -1,4 +1,4 @@
-# KnbightTour
+# KnightTour
 
 Detta projekt skapar en springarvandring på ett schackbräde där
 varje ruta bara får besökas en gång. Initialt väljer man vilken ruta som springaren ska stå på när man börjar med sringarvandringen.
@@ -11,13 +11,12 @@ När det grafiska gränssnittet visas ser du ett schackbräde med 64 rutor 8 rut
 
 Deta projekt Knighttour använder bara jQuery och den ligger med i projektet.
 
-```
-Give examples
-```
 
 ### Installing
 
-Du behöver bara clona projewktet
+Du behöver bara clona projektet som du gör så här
+$git clone  https://github.com/tonytojo/DT173G_Webbutveckling_III. knighttour
+
 
 Say what the step will be
 
