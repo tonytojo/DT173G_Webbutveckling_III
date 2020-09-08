@@ -250,3 +250,17 @@ function CountValidPositions(rad, colNum)
 
     return CountValidPositions;
 }
+
+function Clear() 
+{
+    var table=document.getElementById("places");
+    var r=1; //start counting rows in table
+    while(row=table.rows[r++])
+    {
+      var c=1; //start counting columns in row
+      while(cell=row.cells[c++])
+      {
+        cell.innerHTML=''; // do sth with cell
+      }
+    }
+}

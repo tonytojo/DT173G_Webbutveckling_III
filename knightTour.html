@@ -41,8 +41,9 @@
             document.getElementById("ddlrader").focus();
             
             //Event handler för spara
-            document.getElementById("spara").addEventListener("click", Process, false);
-        });
+            document.getElementById("run").addEventListener("click", Process, false);
+            document.getElementById("clear").addEventListener("click", Clear, false);
+         });
 
     </script>
 </head>
@@ -83,7 +84,7 @@
            
             <ul class="nav">
                <li><input type="submit"  name="clear" id="clear" value="Clear" /></li>
-               <li><input type="button"  name="spara" id="spara" value="Run" /></li>
+               <li><input type="button"  name="run" id="run" value="Run" /></li>
             </ul>
          </form>
       </div> <!--end wrapper-->
