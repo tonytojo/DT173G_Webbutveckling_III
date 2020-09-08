@@ -14,8 +14,10 @@ Deta projekt Knighttour använder bara jQuery och den ligger med i projektet.
 
 ### Installing
 
-Du behöver bara clona projektet som du gör så här
-$git clone  https://github.com/tonytojo/DT173G_Webbutveckling_III. knighttour
+Du behöver bara clona projektet som du gör så här.
+$git clone  https://github.com/tonytojo/DT173G_Webbutveckling_III knighttour
+Mitt remote repository heter DT173G_Webbutveckling_III 
+_Du behöver inte kalla det knighttour som jag har gjort här.Du kan kalla det vad som helst. Det du gör helt enkelt är att ladda ned remote repository och placera det i en folder på datorn med namnet knighttour om du väljer namnet knighttour._
 
 
 ## Versioning
